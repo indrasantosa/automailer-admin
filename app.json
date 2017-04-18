@@ -1,0 +1,24 @@
+{
+  "name": "automailer-admin",
+  "description": "The admin microservice of automailer-admin",
+  "website": "http://www.forestadmin.com/lumber",
+  "repository": "https://github.com/ForestAdmin/lumber",
+  "env": {
+    "FOREST_AUTH_SECRET": {
+      "description": "A random JWT signing secret to protect your admin API",
+      "value": "e7ef2896823774f5ecfa7f2369a5c0417778d6797f6bea24a4e810d8d1ce0f2b1da3b5db235014436bc6bbaba0528b9b"
+    },
+    "FOREST_ENV_SECRET": {
+      "description": "The Forest environment secret",
+      "value": "dda68ca8a1231620983b915600d7b88f04feb4ec0a9229f9502b0b069a81916a"
+    },
+    "DATABASE_URL": {
+      "description": "The remote database connection URL",
+      "value": "postgres://<user>:<password>@<host>:<port>/<databaseName>"
+    },
+    "SSL_DATABASE": {
+      "description": "Specify if a SSL database connection is required.",
+      "value": "true"
+    }
+  }
+}
